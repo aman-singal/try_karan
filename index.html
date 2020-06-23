@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  <!-- If You don't wish to use index.css you can alternatively use the link
+  https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css
+
+  then add this later 
+
+  /* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+  -->
+    <script src="index.js"></script>
+    <!-- index.js alternative link:
+    https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js -->
+    <script>
+      var myScope = document;
+      var iframes = myScope.getElementsByTagName("iframe");
+      if (iframes != null) {
+          for (var i = 0; i < iframes.length; i++) {
+              iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+          }
+      }
+      </script>
+  </head>
+<body>
+    
+
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity"
+  data-flickity-options='{ "freeScroll": false, "wrapAround": true }'>
+  <div id="divScope">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/Fnw4hr7p43Y"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div >
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/Fnw4hr7p43Y"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div >
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/Fnw4hr7p43Y"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div >
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/Fnw4hr7p43Y"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+</body>
+</html>
