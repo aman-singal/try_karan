@@ -1,0 +1,35 @@
+/* Photo Banner */
+.photo-roll--container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.photo-roll {
+    height: 233px;
+    width: 3500px;
+    margin-bottom: 5px;
+    font-size: 0;
+}
+.photo-roll img {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    height: 233px;
+    width: 350px;
+    transition: all 0.5s ease;
+}
+.photo-roll img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.photo-roll img:first-child {
+    animation: bannermove 30s linear infinite;
+}
+/* Keyframe animations*/
+@keyframes bannermove {
+    0% {
+        margin-left: 0px;
+   }
+    100% {
+        margin-left: -2130px;
+   }
+}

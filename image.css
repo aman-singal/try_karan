@@ -161,15 +161,15 @@ body { font-family: sans-serif; }
 
 .carousel-cell {
   width: 70%;
-  
+  height: 250px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-  height: 200px;
+  
 }
 
 @media screen and ( min-width: 768px ) {
   /* half-width cells for larger devices */
-  .carousel-cell {  margin-right: 30px ; height: 200px; }
+  .carousel-cell { height: 250px; margin-right: 30px; }
 }
 
 .iframe 
@@ -180,5 +180,6 @@ body { font-family: sans-serif; }
         -o-border-radius: 20px;
         position: relative;
         overflow: hidden;
-
+        /* width: 400px;
+        height: 300px; */
     }
